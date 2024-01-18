@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NicoleBoock</title>
+  <link rel="stylesheet" href="/styles/popup.css">
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/mobile.css" />
+  <link rel="icon" href="/IMG/Favicon - NB.png">
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/IMG/Logo - NB.png" class="logo" />
+        <ul id="sidemenu">
+          <!-- Nav Option -->
+          <li>
+            <a href="#header" class="home" onclick="closemenu()">Inicio</a>
+          </li>
+          <li><a href="#about" onclick="closemenu()">Acerca de mí</a></li>
+          <li><a href="#services" onclick="closemenu()">Servicios</a></li>
+          <li><a href="#portfolio" onclick="closemenu()">Portafolio</a></li>
+          <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
+          <i class="fa-solid fa-x" onclick="closemenu()"></i>
+
+          <!-- Change Language -->
+          <li>
+            <a href="indexFR.html"><img src="/IMG/Francia.png" alt="bandera Fr" /></a>
+          </li>
+          <li>
+            <a href="indexEN.html"><img src="/IMG/UK.jpg" alt="banderia RU" /></a>
+          </li>
+        </ul>
+
+        <!-- Menu Bar for Small Devices -->
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Traductora, intérprete y profesora</p>
+        <h1>
+          Hola,<br />
+          soy <span>Nicole</span> Boock
+        </h1>
+        <br>
+        <p>Te puedo ayudar con <br> tus <span>proyectos lingüísticos</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/IMG/1.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">Acerca de mí</h1>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Habilidades
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experiencia
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Educación</p>
+            <p class="tab-links">
+              <a target="_blank"
+                href="https://docs.google.com/document/d/1rmzvwrIjUuEo07T2dJE-0nJ1QnEmZwDf/edit?usp=drive_link&ouid=118063310771638022260&rtpof=true&sd=true">
+                Descargar CV</a>
+            </p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <div class="skills-left">
+                <li><span>Lingüística</span></li>
+                <li><span>Traducción</span></li>
+                <li><span>Interpretación</span></li>
+                <li><span>Docencia</span></li>
+                <li><span>Localización</span></li>
+                <li><span>Subtitulado</span></li>
+              </div>
+              <div class="skills-right">
+                <li><span>Responsabilidad</span></li>
+                <li><span>Colabiración</span></li>
+                <li><span>Paciencia</span></li>
+                <li><span>Comunicación</span></li>
+                <li><span>Resolución de problemas</span></li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <p>Entre mis experiencias, puedes encontrar:</p>
+            <ul>
+              <li>
+                <span>2020</span><br />Traductora e intérprete
+                <br>
+                Dico Partners SpA.- Kotra
+              </li>
+              <li>
+                <span>2021</span><br />Profesora asistente de español
+                <br>
+                Lycée René Cassin | Bayona, Francia
+              </li>
+              <li>
+                <span>2023</span><br />Traductora e intérprete
+                <br> Juegos Panamericanos y Parapanamericanos Santiago 2023
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>Escuela Americana de Traductores e Intérpretes | Santiago, Chile
+                <br>Traducción e interpretación de enlace mención inglés-francés
+                <br> <span>2017-2020, generación 2021</span>
+              </li>
+              <li>
+                Université Grenoble Alpes - CNED | Grenoble, France - à distance
+                <br>Diplôme d'Université Français Langue Étrangère
+                <br><span>2022-2023, generación 2023</span>
+              </li>
+              <li>Instituto Francés de Chile | Santiago, Chile
+                <br>Curso de perfeccionamiento de francés C1
+                <br><span>2022-2023, generación 2023</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+
+  <div id="services">
+    <div class="container hidden">
+      <h1 class="sub-title">Servicios</h1>
+      <div class="services-list">
+        <div class="s1">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Traducción</h2>
+            <p>
+              ¿Quieres que tu proyecto llegue a más clientes y a más audiencia? Esta puede ser tu opción más favorable.
+              Trabajo con proyectos de diversas áreas como <span>medicina, minería, entretenimiento</span>, entre otras. Este
+              servicio
+              puede utilizarse para trabajos en formatos html, docx, pdf, txt, SRT, xlsx, entre otros. Disponible en
+              tres
+              idiomas: español, inglés y francés
+            </p>
+            <button type="submit" class="btn" onclick="openPopup()">Ver más</button>
+          </div>
+          <div class="popup" id="popup">
+            <h2>Here's some information about my prices</h2>
+            <p>I'm worth every dollar, just for you to know</p>
+            <button type="button" onclick="closePopup()">Volver</button>
+          </div>
+        </div>
+
+        <div class="s1">
+          <i class="fa-sharp fa-solid fa-crop"></i>
+          <h2>Interpretación</h2>
+          <p>
+            ¿Buscas que tu presentación pueda ser entendida por más público? Te recomiendo esta opción. Sea cual sea tu
+            tema de ponencia, puedo estar allí para que todo el público pueda comprenderte. Cuento con los servicios de
+            interpretación de enlace, consecutiva y simultánea. Disponible en tres idiomas: español, inglés y francés.
+          </p>
+          <a href="#">Ver más</a>
+        </div>
+        <div class="s1">
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>Docencia</h2>
+          <p>
+            ¿Necesitas a una profesora de idiomas? Esta es tu sección. Puedo trabajar como profesora particular o como
+            profesora en algún establecimiento educativo. Trabajo con alumnos de diferentes niveles
+            (niños-adolescentes-adultos). Enfocada en diferentes metas, ya sea pasar un examen o aprender para hablar
+            fluido. Disponible en tres idiomas: español, inglés y francés.
+          </p>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">
+        ¿Quieres echarle un vistazo a mis experiencias?
+      </h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="/IMG/Nicki1.jpg" alt="" />
+          <div class="layer">
+            <h2>Visita a Chile DTI gólbol</h2>
+            <h3>Intérprete consecutiva y simultánea en español-inglés</h3>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/IMG/Nicki2.jpg" alt="" />
+          <div class="layer">
+            <h2>COPACI</h2>
+            <h3>Intérprete simultánea en español-inglés</h3>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/IMG/Nicki3.jpg" alt="" />
+          <div class="layer">
+            <h2>Comisiones médicas</h2>
+            <h3>Intérprete consecutiva y simultánea en español-inglés</h3>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- This button might be used now or in the future - Check with Nicole -->
+      <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+  </div>
+
+  <!-- Contact -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contacto</h1>
+          <a href="mailto:nboock.translator@gmail.com">
+            <p><i class="fa-solid fa-paper-plane"></i> nboock.translator@gmail.com
+          </a></p>
+          <a href="tel:+56962008751">
+            <p><i class="fa-solid fa-phone"></i> +56962008751
+          </a></p>
+          <a href="https://www.linkedin.com/in/nicole-boock/" target="_blank">
+            <p><i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a></p>
+          <!-- <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    </div> -->
+        </div>
+        <div class="contact-right">
+          <span id="msg"></span>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Nombre" required>
+            <input type="email" name="Email" placeholder="Dirección de correo" required>
+            <textarea name="Message" rows="6" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn btn2">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scrollTop" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a1f070a8c1.js" crossorigin="anonymous"></script>
+
+  <script src="/scripts/scripts.js"></script>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      })
+    }
+    );
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+      popup.classList.add("open-popup")
+    }
+
+    function closePopup() {
+      popup.classList.remove("open-popup")
+    }
+
+  </script>
+
+
+</html>
